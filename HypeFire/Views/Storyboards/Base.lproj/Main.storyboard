@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign Up View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SignUpViewController" customModule="HypeFire" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rYa-jH-S10" userLabel="mainSV">
+                                <rect key="frame" x="36.5" y="363.5" width="393.5" height="179"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AVH-Mk-SYZ" userLabel="logInSignUpSV">
+                                        <rect key="frame" x="0.0" y="0.0" width="59" height="179"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTy-Xf-F1X">
+                                                <rect key="frame" x="0.0" y="0.0" width="59" height="85.5"/>
+                                                <state key="normal" title="Log In"/>
+                                                <connections>
+                                                    <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZRo-NK-EPw"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gz0-jV-IcI">
+                                                <rect key="frame" x="0.0" y="93.5" width="59" height="85.5"/>
+                                                <state key="normal" title="Sign Up"/>
+                                                <connections>
+                                                    <action selector="signUpButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JRY-G1-hcI"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="OWN-Wj-yFl" userLabel="usernamePasswordSV">
+                                        <rect key="frame" x="59" y="0.0" width="334.5" height="179"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Username..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g5B-6t-mdF" customClass="HypeFireTextField" customModule="HypeFire" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="334.5" height="57"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fsd-Zu-x4e" customClass="HypeFireTextField" customModule="HypeFire" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="61" width="334.5" height="57"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eiV-cW-hk0" customClass="HypeFireTextField" customModule="HypeFire" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="122" width="334.5" height="57"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="OWN-Wj-yFl" firstAttribute="width" secondItem="rYa-jH-S10" secondAttribute="width" multiplier="0.85" id="2JC-MV-kCa"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="wiM-03-vef" userLabel="welcomeLabelSV">
+                                <rect key="frame" x="57.5" y="253.5" width="372.5" height="62"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Hype!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gZ-eV-N4N" customClass="HypeFireLabelBold" customModule="HypeFire" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="372.5" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log in or sign up to start spreading Hype!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjL-nO-MQH" customClass="HypeFireLabel" customModule="HypeFire" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="33" width="372.5" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="t6i-Ga-2hM" userLabel="helpFAQSV">
+                                <rect key="frame" x="305" y="566.5" width="70" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NbY-TG-O8r">
+                                        <rect key="frame" x="0.0" y="0.0" width="32" height="30"/>
+                                        <state key="normal" title="Help"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCB-FI-Mjg">
+                                        <rect key="frame" x="40" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="FAQ"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zoY-7x-MMh" customClass="HypeFireButton" customModule="HypeFire" customModuleProvider="target">
+                                <rect key="frame" x="263" y="632.5" width="112" height="54"/>
+                                <state key="normal" title="Sign Me Up!"/>
+                                <connections>
+                                    <action selector="signMeUpButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EYJ-vr-rXe"/>
+                                </connections>
+                            </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FVe-mb-k4w">
+                                <rect key="frame" x="57.5" y="109" width="134.5" height="134.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FVe-mb-k4w" secondAttribute="height" multiplier="1:1" id="eLs-nM-FSw"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="Pxi-Zd-71J" kind="embed" identifier="toPhotoPickerVC" id="WzY-r8-9Zz"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rYa-jH-S10" firstAttribute="top" secondItem="wiM-03-vef" secondAttribute="bottom" constant="48" id="00L-UO-YQj"/>
+                            <constraint firstItem="t6i-Ga-2hM" firstAttribute="top" secondItem="OWN-Wj-yFl" secondAttribute="bottom" constant="24" id="0io-3J-XCL"/>
+                            <constraint firstItem="rYa-jH-S10" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.95" id="DNz-2z-c95"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t6i-Ga-2hM" secondAttribute="trailing" constant="39" id="GpR-HN-8aA"/>
+                            <constraint firstItem="zoY-7x-MMh" firstAttribute="trailing" secondItem="t6i-Ga-2hM" secondAttribute="trailing" id="O4E-cj-dcX"/>
+                            <constraint firstItem="rYa-jH-S10" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="O7V-KY-lWU"/>
+                            <constraint firstItem="FVe-mb-k4w" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.15" id="PVM-lc-lbX"/>
+                            <constraint firstItem="wiM-03-vef" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="QS8-WX-akZ"/>
+                            <constraint firstItem="rYa-jH-S10" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="SXX-ka-dlc"/>
+                            <constraint firstItem="wiM-03-vef" firstAttribute="firstBaseline" secondItem="FVe-mb-k4w" secondAttribute="baseline" constant="33" symbolType="layoutAnchor" id="X0b-wR-vfX"/>
+                            <constraint firstItem="FVe-mb-k4w" firstAttribute="leading" secondItem="wiM-03-vef" secondAttribute="leading" id="Yq1-ee-FTB"/>
+                            <constraint firstItem="wiM-03-vef" firstAttribute="trailing" secondItem="rYa-jH-S10" secondAttribute="trailing" id="bhC-b4-scs"/>
+                            <constraint firstItem="zoY-7x-MMh" firstAttribute="leading" secondItem="OWN-Wj-yFl" secondAttribute="centerX" id="eQ6-rO-HKY"/>
+                            <constraint firstItem="zoY-7x-MMh" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.06" id="el3-sM-shV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rYa-jH-S10" secondAttribute="trailing" constant="-16" id="gJW-gG-moW"/>
+                            <constraint firstItem="zoY-7x-MMh" firstAttribute="top" secondItem="t6i-Ga-2hM" secondAttribute="bottom" constant="36" id="p6Q-8z-eV4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="eiV-cW-hk0" id="L4c-WJ-2Wl"/>
+                        <outlet property="descriptionLabel" destination="bjL-nO-MQH" id="wb8-CR-OWh"/>
+                        <outlet property="enterPasswordTextField" destination="fsd-Zu-x4e" id="7vP-Ad-OTS"/>
+                        <outlet property="faqButton" destination="WCB-FI-Mjg" id="olA-Kf-2iT"/>
+                        <outlet property="helpButton" destination="NbY-TG-O8r" id="jZR-Oc-jkO"/>
+                        <outlet property="logInButton" destination="PTy-Xf-F1X" id="Y5q-qT-DTk"/>
+                        <outlet property="photoPickerContainerView" destination="FVe-mb-k4w" id="pSg-Dd-8ag"/>
+                        <outlet property="signMeUpButton" destination="zoY-7x-MMh" id="NWv-jC-Chw"/>
+                        <outlet property="signUpButton" destination="gz0-jV-IcI" id="2UQ-AH-Vi7"/>
+                        <outlet property="usernamePasswordsSV" destination="OWN-Wj-yFl" id="KUr-by-OId"/>
+                        <outlet property="usernameTextField" destination="g5B-6t-mdF" id="RCh-8l-iz8"/>
+                        <outlet property="welcomeLabel" destination="8gZ-eV-N4N" id="OGn-p1-7iY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="116"/>
+        </scene>
+        <!--PhotoPicker-->
+        <scene sceneID="dki-0l-JbW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PhotoPicker" id="Pxi-Zd-71J" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EWj-2M-c5m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="980" y="22"/>
+        </scene>
+    </scenes>
+</document>

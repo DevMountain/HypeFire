@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D9B7B106BE7ACED48D4D0F4 /* Pods_HypeFire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A57C681286B0F50274CF1D /* Pods_HypeFire.framework */; };
+		7E5DDD2F24B9FB5400D2CB13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5DDD2E24B9FB5400D2CB13 /* AppDelegate.swift */; };
+		7E5DDD3124B9FB5400D2CB13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5DDD3024B9FB5400D2CB13 /* SceneDelegate.swift */; };
+		7E5DDD3624B9FB5400D2CB13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5DDD3424B9FB5400D2CB13 /* Main.storyboard */; };
+		7E5DDD3824B9FB5600D2CB13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E5DDD3724B9FB5600D2CB13 /* Assets.xcassets */; };
+		7E5DDD3B24B9FB5600D2CB13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5DDD3924B9FB5600D2CB13 /* LaunchScreen.storyboard */; };
+		7E5DDD4324B9FB9500D2CB13 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E5DDD4224B9FB9400D2CB13 /* GoogleService-Info.plist */; };
+		7E714EFF24BA268300B392BB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E714EFE24BA268300B392BB /* SignUpViewController.swift */; };
+		7E714F0224BA2B2F00B392BB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E714F0124BA2B2F00B392BB /* User.swift */; };
+		7E714F0524BA2D7700B392BB /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E714F0424BA2D7700B392BB /* UserController.swift */; };
+		7E714F0924BA408E00B392BB /* UserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E714F0824BA408E00B392BB /* UserError.swift */; };
+		7E714F0B24BA42E600B392BB /* HypeFire.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E714F0A24BA42E600B392BB /* HypeFire.storyboard */; };
+		7E714F0D24BA452700B392BB /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E714F0C24BA452700B392BB /* Colors.xcassets */; };
+		7E714F1124BA457800B392BB /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E714F1024BA457800B392BB /* StyleGuide.swift */; };
+		7E714F1724BA478000B392BB /* HypeFireTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E714F1624BA478000B392BB /* HypeFireTextField.swift */; };
+		7E714F1A24BA480000B392BB /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E714F1924BA47FE00B392BB /* Lato-Bold.ttf */; };
+		7E714F1C24BA480B00B392BB /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E714F1B24BA480800B392BB /* Lato-Light.ttf */; };
+		7E714F1E24BA481500B392BB /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E714F1D24BA481200B392BB /* Lato-Regular.ttf */; };
+		7E714F2124BA4B0100B392BB /* HypeFireLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E714F2024BA4B0100B392BB /* HypeFireLabel.swift */; };
+		7E714F2424BA4B2900B392BB /* HypeFireButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E714F2324BA4B2900B392BB /* HypeFireButton.swift */; };
+		7E714F2624BA574F00B392BB /* HypeFireListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E714F2524BA574F00B392BB /* HypeFireListTableViewController.swift */; };
+		7E714F2824BA5A3400B392BB /* Hype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E714F2724BA5A3400B392BB /* Hype.swift */; };
+		7E714F2A24BA5F2300B392BB /* HypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E714F2924BA5F2300B392BB /* HypeController.swift */; };
+		7E714F2C24BAAF4100B392BB /* HypeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E714F2B24BAAF4100B392BB /* HypeError.swift */; };
+		7E714F2E24BAB23600B392BB /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E714F2D24BAB23600B392BB /* DateExtension.swift */; };
+		7E714F3024BB872900B392BB /* PhotoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E714F2F24BB872900B392BB /* PhotoPickerViewController.swift */; };
+		7E714F3224BB875A00B392BB /* PhotoPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E714F3124BB875A00B392BB /* PhotoPicker.storyboard */; };
+		7E714F3424BBE73A00B392BB /* HypeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E714F3324BBE73A00B392BB /* HypeDetailViewController.swift */; };
+		7E714F3724BC885D00B392BB /* HypeFireTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E714F3624BC885D00B392BB /* HypeFireTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6AD832C627C139EDED3DAE50 /* Pods-HypeFire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HypeFire.release.xcconfig"; path = "Target Support Files/Pods-HypeFire/Pods-HypeFire.release.xcconfig"; sourceTree = "<group>"; };
+		79A57C681286B0F50274CF1D /* Pods_HypeFire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HypeFire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E5DDD2B24B9FB5400D2CB13 /* HypeFire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HypeFire.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E5DDD2E24B9FB5400D2CB13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7E5DDD3024B9FB5400D2CB13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7E5DDD3524B9FB5400D2CB13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7E5DDD3724B9FB5600D2CB13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E5DDD3A24B9FB5600D2CB13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7E5DDD3C24B9FB5600D2CB13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E5DDD4224B9FB9400D2CB13 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7E714EFE24BA268300B392BB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		7E714F0124BA2B2F00B392BB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7E714F0424BA2D7700B392BB /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		7E714F0824BA408E00B392BB /* UserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserError.swift; sourceTree = "<group>"; };
+		7E714F0A24BA42E600B392BB /* HypeFire.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HypeFire.storyboard; sourceTree = "<group>"; };
+		7E714F0C24BA452700B392BB /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		7E714F1024BA457800B392BB /* StyleGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
+		7E714F1624BA478000B392BB /* HypeFireTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypeFireTextField.swift; sourceTree = "<group>"; };
+		7E714F1924BA47FE00B392BB /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		7E714F1B24BA480800B392BB /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		7E714F1D24BA481200B392BB /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		7E714F2024BA4B0100B392BB /* HypeFireLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypeFireLabel.swift; sourceTree = "<group>"; };
+		7E714F2324BA4B2900B392BB /* HypeFireButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypeFireButton.swift; sourceTree = "<group>"; };
+		7E714F2524BA574F00B392BB /* HypeFireListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypeFireListTableViewController.swift; sourceTree = "<group>"; };
+		7E714F2724BA5A3400B392BB /* Hype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hype.swift; sourceTree = "<group>"; };
+		7E714F2924BA5F2300B392BB /* HypeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypeController.swift; sourceTree = "<group>"; };
+		7E714F2B24BAAF4100B392BB /* HypeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypeError.swift; sourceTree = "<group>"; };
+		7E714F2D24BAB23600B392BB /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		7E714F2F24BB872900B392BB /* PhotoPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerViewController.swift; sourceTree = "<group>"; };
+		7E714F3124BB875A00B392BB /* PhotoPicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PhotoPicker.storyboard; sourceTree = "<group>"; };
+		7E714F3324BBE73A00B392BB /* HypeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypeDetailViewController.swift; sourceTree = "<group>"; };
+		7E714F3624BC885D00B392BB /* HypeFireTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypeFireTableViewCell.swift; sourceTree = "<group>"; };
+		F40B0D52CD9012ECF647B443 /* Pods-HypeFire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HypeFire.debug.xcconfig"; path = "Target Support Files/Pods-HypeFire/Pods-HypeFire.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E5DDD2824B9FB5400D2CB13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D9B7B106BE7ACED48D4D0F4 /* Pods_HypeFire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75278E3704E306DEBF467115 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F40B0D52CD9012ECF647B443 /* Pods-HypeFire.debug.xcconfig */,
+				6AD832C627C139EDED3DAE50 /* Pods-HypeFire.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7E5DDD2224B9FB5400D2CB13 = {
+			isa = PBXGroup;
+			children = (
+				7E5DDD2D24B9FB5400D2CB13 /* HypeFire */,
+				7E5DDD2C24B9FB5400D2CB13 /* Products */,
+				75278E3704E306DEBF467115 /* Pods */,
+				8E58B90D630D15139AC208BC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7E5DDD2C24B9FB5400D2CB13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E5DDD2B24B9FB5400D2CB13 /* HypeFire.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E5DDD2D24B9FB5400D2CB13 /* HypeFire */ = {
+			isa = PBXGroup;
+			children = (
+				7E714F0024BA2B0D00B392BB /* Models */,
+				7E714EFC24BA266300B392BB /* Controllers */,
+				7E714F0624BA3D0300B392BB /* Views */,
+				7E714F0E24BA455700B392BB /* Helpers & Extensions */,
+				7E714EFB24BA257400B392BB /* Resources */,
+			);
+			path = HypeFire;
+			sourceTree = "<group>";
+		};
+		7E714EFB24BA257400B392BB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7E714F1824BA47F100B392BB /* Fonts */,
+				7E5DDD2E24B9FB5400D2CB13 /* AppDelegate.swift */,
+				7E5DDD3024B9FB5400D2CB13 /* SceneDelegate.swift */,
+				7E5DDD3724B9FB5600D2CB13 /* Assets.xcassets */,
+				7E714F0C24BA452700B392BB /* Colors.xcassets */,
+				7E5DDD3924B9FB5600D2CB13 /* LaunchScreen.storyboard */,
+				7E5DDD3C24B9FB5600D2CB13 /* Info.plist */,
+				7E5DDD4224B9FB9400D2CB13 /* GoogleService-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7E714EFC24BA266300B392BB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7E714F0324BA2D6800B392BB /* Model Controllers */,
+				7E714EFD24BA266900B392BB /* View Controllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7E714EFD24BA266900B392BB /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7E714EFE24BA268300B392BB /* SignUpViewController.swift */,
+				7E714F2524BA574F00B392BB /* HypeFireListTableViewController.swift */,
+				7E714F2F24BB872900B392BB /* PhotoPickerViewController.swift */,
+				7E714F3324BBE73A00B392BB /* HypeDetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		7E714F0024BA2B0D00B392BB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7E714F0124BA2B2F00B392BB /* User.swift */,
+				7E714F0824BA408E00B392BB /* UserError.swift */,
+				7E714F2724BA5A3400B392BB /* Hype.swift */,
+				7E714F2B24BAAF4100B392BB /* HypeError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7E714F0324BA2D6800B392BB /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7E714F0424BA2D7700B392BB /* UserController.swift */,
+				7E714F2924BA5F2300B392BB /* HypeController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		7E714F0624BA3D0300B392BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7E714F1424BA476000B392BB /* Custom UI */,
+				7E714F3524BC87E000B392BB /* Custom Cells */,
+				7E714F0724BA3D0A00B392BB /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7E714F0724BA3D0A00B392BB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7E5DDD3424B9FB5400D2CB13 /* Main.storyboard */,
+				7E714F0A24BA42E600B392BB /* HypeFire.storyboard */,
+				7E714F3124BB875A00B392BB /* PhotoPicker.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		7E714F0E24BA455700B392BB /* Helpers & Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7E714F1024BA457800B392BB /* StyleGuide.swift */,
+				7E714F2D24BAB23600B392BB /* DateExtension.swift */,
+			);
+			path = "Helpers & Extensions";
+			sourceTree = "<group>";
+		};
+		7E714F1424BA476000B392BB /* Custom UI */ = {
+			isa = PBXGroup;
+			children = (
+				7E714F2224BA4B1600B392BB /* Custom Buttons */,
+				7E714F1F24BA4AE700B392BB /* Custom Labels */,
+				7E714F1524BA476C00B392BB /* Custom TextFields */,
+			);
+			path = "Custom UI";
+			sourceTree = "<group>";
+		};
+		7E714F1524BA476C00B392BB /* Custom TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				7E714F1624BA478000B392BB /* HypeFireTextField.swift */,
+			);
+			path = "Custom TextFields";
+			sourceTree = "<group>";
+		};
+		7E714F1824BA47F100B392BB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7E714F1924BA47FE00B392BB /* Lato-Bold.ttf */,
+				7E714F1B24BA480800B392BB /* Lato-Light.ttf */,
+				7E714F1D24BA481200B392BB /* Lato-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7E714F1F24BA4AE700B392BB /* Custom Labels */ = {
+			isa = PBXGroup;
+			children = (
+				7E714F2024BA4B0100B392BB /* HypeFireLabel.swift */,
+			);
+			path = "Custom Labels";
+			sourceTree = "<group>";
+		};
+		7E714F2224BA4B1600B392BB /* Custom Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				7E714F2324BA4B2900B392BB /* HypeFireButton.swift */,
+			);
+			path = "Custom Buttons";
+			sourceTree = "<group>";
+		};
+		7E714F3524BC87E000B392BB /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7E714F3624BC885D00B392BB /* HypeFireTableViewCell.swift */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		8E58B90D630D15139AC208BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79A57C681286B0F50274CF1D /* Pods_HypeFire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E5DDD2A24B9FB5400D2CB13 /* HypeFire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E5DDD3F24B9FB5600D2CB13 /* Build configuration list for PBXNativeTarget "HypeFire" */;
+			buildPhases = (
+				AE527F69A1D6ADD6E84C83AD /* [CP] Check Pods Manifest.lock */,
+				7E5DDD2724B9FB5400D2CB13 /* Sources */,
+				7E5DDD2824B9FB5400D2CB13 /* Frameworks */,
+				7E5DDD2924B9FB5400D2CB13 /* Resources */,
+				0F64E9FEB49C6DBCB4790984 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HypeFire;
+			productName = HypeFire;
+			productReference = 7E5DDD2B24B9FB5400D2CB13 /* HypeFire.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E5DDD2324B9FB5400D2CB13 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Cameron Stuart";
+				TargetAttributes = {
+					7E5DDD2A24B9FB5400D2CB13 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 7E5DDD2624B9FB5400D2CB13 /* Build configuration list for PBXProject "HypeFire" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E5DDD2224B9FB5400D2CB13;
+			productRefGroup = 7E5DDD2C24B9FB5400D2CB13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E5DDD2A24B9FB5400D2CB13 /* HypeFire */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E5DDD2924B9FB5400D2CB13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E714F1A24BA480000B392BB /* Lato-Bold.ttf in Resources */,
+				7E5DDD3B24B9FB5600D2CB13 /* LaunchScreen.storyboard in Resources */,
+				7E5DDD4324B9FB9500D2CB13 /* GoogleService-Info.plist in Resources */,
+				7E5DDD3824B9FB5600D2CB13 /* Assets.xcassets in Resources */,
+				7E714F1E24BA481500B392BB /* Lato-Regular.ttf in Resources */,
+				7E714F0D24BA452700B392BB /* Colors.xcassets in Resources */,
+				7E5DDD3624B9FB5400D2CB13 /* Main.storyboard in Resources */,
+				7E714F3224BB875A00B392BB /* PhotoPicker.storyboard in Resources */,
+				7E714F0B24BA42E600B392BB /* HypeFire.storyboard in Resources */,
+				7E714F1C24BA480B00B392BB /* Lato-Light.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F64E9FEB49C6DBCB4790984 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HypeFire/Pods-HypeFire-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HypeFire/Pods-HypeFire-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HypeFire/Pods-HypeFire-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE527F69A1D6ADD6E84C83AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HypeFire-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E5DDD2724B9FB5400D2CB13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E714F2624BA574F00B392BB /* HypeFireListTableViewController.swift in Sources */,
+				7E714F3724BC885D00B392BB /* HypeFireTableViewCell.swift in Sources */,
+				7E714F3024BB872900B392BB /* PhotoPickerViewController.swift in Sources */,
+				7E714F2E24BAB23600B392BB /* DateExtension.swift in Sources */,
+				7E714F1124BA457800B392BB /* StyleGuide.swift in Sources */,
+				7E714F0224BA2B2F00B392BB /* User.swift in Sources */,
+				7E5DDD2F24B9FB5400D2CB13 /* AppDelegate.swift in Sources */,
+				7E714F2C24BAAF4100B392BB /* HypeError.swift in Sources */,
+				7E714F0524BA2D7700B392BB /* UserController.swift in Sources */,
+				7E714EFF24BA268300B392BB /* SignUpViewController.swift in Sources */,
+				7E714F2A24BA5F2300B392BB /* HypeController.swift in Sources */,
+				7E714F2424BA4B2900B392BB /* HypeFireButton.swift in Sources */,
+				7E714F3424BBE73A00B392BB /* HypeDetailViewController.swift in Sources */,
+				7E5DDD3124B9FB5400D2CB13 /* SceneDelegate.swift in Sources */,
+				7E714F2124BA4B0100B392BB /* HypeFireLabel.swift in Sources */,
+				7E714F0924BA408E00B392BB /* UserError.swift in Sources */,
+				7E714F1724BA478000B392BB /* HypeFireTextField.swift in Sources */,
+				7E714F2824BA5A3400B392BB /* Hype.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7E5DDD3424B9FB5400D2CB13 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E5DDD3524B9FB5400D2CB13 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7E5DDD3924B9FB5600D2CB13 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E5DDD3A24B9FB5600D2CB13 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E5DDD3D24B9FB5600D2CB13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7E5DDD3E24B9FB5600D2CB13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E5DDD4024B9FB5600D2CB13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F40B0D52CD9012ECF647B443 /* Pods-HypeFire.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KMTDCPCY5V;
+				INFOPLIST_FILE = HypeFire/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CameronStuart.HypeFire;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E5DDD4124B9FB5600D2CB13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AD832C627C139EDED3DAE50 /* Pods-HypeFire.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KMTDCPCY5V;
+				INFOPLIST_FILE = HypeFire/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CameronStuart.HypeFire;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E5DDD2624B9FB5400D2CB13 /* Build configuration list for PBXProject "HypeFire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E5DDD3D24B9FB5600D2CB13 /* Debug */,
+				7E5DDD3E24B9FB5600D2CB13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E5DDD3F24B9FB5600D2CB13 /* Build configuration list for PBXNativeTarget "HypeFire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E5DDD4024B9FB5600D2CB13 /* Debug */,
+				7E5DDD4124B9FB5600D2CB13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E5DDD2324B9FB5400D2CB13 /* Project object */;
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>181983262535-c24o4ak5glt8mk6clj35j53mva0fpi7g.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.181983262535-c24o4ak5glt8mk6clj35j53mva0fpi7g</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCKry1zvzee_n6nUGEo8_gw3I1Cw2paw5c</string>
+	<key>GCM_SENDER_ID</key>
+	<string>181983262535</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.CameronStuart.HypeFire</string>
+	<key>PROJECT_ID</key>
+	<string>hypefire-ee6c5</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hypefire-ee6c5.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:181983262535:ios:36c30efc3d70c5ba807e62</string>
+	<key>DATABASE_URL</key>
+	<string>https://hypefire-ee6c5.firebaseio.com</string>
+</dict>
+</plist>
